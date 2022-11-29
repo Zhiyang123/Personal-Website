@@ -1,10 +1,72 @@
-body{
-    background-color: lightblue;
+/* **************** TAG SELECTORS **************** */
+body {
+    background-color: #F6F6C9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-hr{
-    border-style:dotted none none;
+
+hr {
+    border-style: dotted none none;
     border-color: grey;
     border-width: 5px;
     width: 5%;
 
+}
+
+hr:hover{
+    border-color: gold;
+}
+
+h1 {
+    color: #66BFBF;
+    text-align:center;
+}
+
+h1:hover{
+    color: gold;
+}
+
+h3 {
+    color: #66BFBF;
+    text-align:center;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* **************** CLASS SELECTORS **************** */
+/* 
+class is not unique, and can be applied to multiple html elements at one time;
+multiple classes can be used in conjuction with one another
+
+*/
+.container {
+    height: 300px;
+    position: relative;
+  }
+  
+.circular {
+    border-radius: 50%;
+}
+
+.center{
+    margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.gold:hover{
+    color: gold;
+}
+
+
+/* **************** ID SELECTORS **************** */
+/* id is unique, and can only be applied to one html element */
+#h3{
+    color: #66BFBF;
 }
