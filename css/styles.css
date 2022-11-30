@@ -1,7 +1,24 @@
 /* **************** TAG SELECTORS **************** */
 body {
+    margin: 0;
     background-color: #F6F6C9;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+
+p {
+    line-height: 2;
+}
+
+a{
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+  }
+  
+a:hover {
+color: gold;
 }
 
 hr {
@@ -9,32 +26,49 @@ hr {
     border-color: grey;
     border-width: 5px;
     width: 5%;
+    margin: 100px auto;
 
 }
 
-hr:hover{
+hr:hover {
     border-color: gold;
 }
 
 h1 {
     color: #66BFBF;
-    text-align:center;
+    /* text-align:center; can also use margin: 0 auto 0 auto (if text-align:center does not work) */
+    font-size: 5.625rem;
+    font-weight: normal;
+    font-family: 'Sacramento', cursive;
+    margin: 50px auto 0 auto;
 }
 
-h1:hover{
+h1:hover {
+    color: gold;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+h2:hover {
     color: gold;
 }
 
 h3 {
     color: #66BFBF;
-    text-align:center;
+    font-family: 'Montserrat', sans-serif;
 }
 
-table{
+table {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
+
 
 /* **************** CLASS SELECTORS **************** */
 /* 
@@ -42,31 +76,144 @@ class is not unique, and can be applied to multiple html elements at one time;
 multiple classes can be used in conjuction with one another
 
 */
+.top-container {
+    background-color: #E4F9F5;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 650px;
+}
+
+.middle-container {
+    margin: 100px 0;
+}
+
+.bottom-container {
+    background-color: #E4F9F5;
+    padding: 50px 0 20px;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+}
+
+.intro {
+    width: 30%;
+    margin: auto;
+}
+
+.top-cloud {
+    position: absolute;
+    right: 300px;
+    top: 40px;
+    height: 150px;
+}
+
+.bottom-cloud {
+    position: absolute;
+    top: 350px;
+    left: 250px;
+    bottom: 300px;
+    height: 150px;
+}
+
+.carnival {
+    position: absolute;
+    top: 500px;
+    left: 375px;
+}
+
+.badminton-img {
+    width: 25%;
+    float: left;
+    /*allow text to wrap the right side of the image*/
+    margin-right: 30px;
+}
+
+.napping-img {
+    width: 25%;
+    float: right;
+    /*allow text to wrap the left side of the image*/
+    margin-left: 30px;
+}
+
+.contact-message {
+    width: 40%;
+    margin: 40px auto 60px;
+}
+
+.copyright {
+    color: #EAF6F6;
+    font-size: 0.75rem;
+    padding: 20px 0;
+}
+
 .container {
     height: 300px;
     position: relative;
-  }
-  
+}
+
 .circular {
     border-radius: 50%;
 }
 
-.center{
+.center {
     margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
-.gold:hover{
+.gold:hover {
     color: gold;
+}
+
+.link {
+    color: #6ECCAF;
+}
+
+.link:hover {
+    color: gold;
+}
+
+.btn {
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
 }
 
 
 /* **************** ID SELECTORS **************** */
 /* id is unique, and can only be applied to one html element */
-#h3{
+#h3 {
     color: #66BFBF;
 }
+
+#container-gudetama {
+    height: 250px;
+    position: relative;
+} 
