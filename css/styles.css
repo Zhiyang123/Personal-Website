@@ -80,7 +80,8 @@ multiple classes can be used in conjuction with one another
     background-color: #E4F9F5;
     position: relative;
     padding-top: 100px;
-    padding-bottom: 700px;
+    padding-bottom: 200px;
+    /* padding-bottom: 700px; */
 }
 
 .middle-container {
